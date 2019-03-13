@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -71,6 +71,33 @@ p {
     margin: 0 auto;
 }
 
+.imageandlogo{
+  margin:auto;
+  display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
+
+}
+.home {
+  margin-top:50px;
+}
+.about {
+	margin-top:50px;
+}
+.products {
+	margin-top:50px;
+}
+.blog {
+	margin-top:50px;
+}
+.contact {
+	margin-top:50px;
+}
+.image{
+margin-top: auto;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -79,10 +106,13 @@ p {
     border-bottom: 1px dashed black;
 }
 
+
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+		/* change*/margin-top: 40px;
 }
 
 .middle-content {
@@ -143,4 +173,171 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+/* for box color*/
+.middle-content .boxes .box .one{
+	background-color: teal;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.middle-content .boxes .box .two{
+	background-color: gold;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.middle-content .boxes .box .three{
+	background-color:cadetblue;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.middle-content .boxes .box .four{
+	background-color: coral;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.middle-content .boxes .box .five{
+	background-color: crimson;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.middle-content .boxes .box .six{
+	background-color: forestgreen;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.middle-content .boxes .box .seven{
+	background-color: darkorchid;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.middle-content .boxes .box .eight{
+	background-color: hotpink;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.middle-content .boxes .box .nine{
+	background-color: indigo;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.middle-content .boxes .box .ten{
+	background-color: dodgerblue;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+   /*CSS for about page*/
+.intropara{
+	margin-top: 50px;
+	padding: 10px;
+	border-bottom: 1px dashed black;
+}
+.boxone{
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+		/* border: 1px solid black; */
+}
+.boxtwo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+.boxcontainer{
+	display:flex;
+flex-direction: column;
+justify-content: center;
+}
+.first{
+
+	margin: 35px;
+	margin-left: 0px;
+	border-bottom : 1px dashed black;
+}
+.second{
+	border-bottom: 1px dashed black;
+}
+.third{
+
+	margin: 35px;
+	margin-left: 0px;
+	border-bottom: 1px dashed black;
+}
+.fourth{
+	border-bottom: 1px dashed black;
+}
+
+.button{
+border: 1px solid black;
+border-radius: 10px;
+padding:10px;
+text-align:center;
+width: 120px;
+height:40px;
+margin:20px;
+margin-left: 0px;
+}
+/*CSS animation pulse */
+@keyframes pulse{
+
+  	0%   {background-color:yellow; }
+	  25%  {background-color:red; }
+	  50%  {background-color:blue;}
+	  75%  {background-color:green; }
+	  100% {background-color:yellow; }
+	}
+	.button{
+	background-color:yellow;
+	animation-name: pulse;
+	animation-duration: 6s;
+	}
+h2{
+	padding: 20px;
+	padding-left:0px;
+}
+.footerdiv{
+	margin-bottom:30px;
 }
